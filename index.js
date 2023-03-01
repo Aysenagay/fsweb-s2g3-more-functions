@@ -46,10 +46,18 @@ return sonuc ;
 */
 
 function ortalamaBul(sayiArray) {
-let yeniArray =[];
-yeniArray = 
+let toplam = 0;
+if(sayiArray.length !==0){
+for (let i=0 ;i<sayiArray.length;i++){
+toplam =toplam + sayiArray[i];
 }
-
+let ortalama = toplam/sayiArray.length;
+return ortalama;
+}
+else if (sayiArray.length == 0){
+  return null ;
+}
+}
 /*
   GÖREV 3
   - Input:  Bir sayı arrayini ve ortalama bulmaya yarayacak bir fonksiyonu parametre olarak alacak bir fonksiyon oluştur.
@@ -69,10 +77,26 @@ yeniArray =
   örnek input:  [109, 216, 288, 143, 71, 185, -278, 194, 5]
   örnek output: [109, 216, 288, 143, 185, 194]
 */
-
-function ortalamadanBuyukleriBul(/* kodlar buraya */) {
-  // kodlar buraya
+function ortalamadanBuyukleriBul(agorev1,gorev2) {
+ let aritmetikDizi = [];
+ const girilenSayi = gorev2(agorev1);
+ let i = 0;
+ if (agorev1.length !==0){
+ for(let i=0;i<agorev1.length;i++){
+ if (agorev1[i] >= gorev2(agorev1))
+ aritmetikDizi.push (agorev1[i]);
+ }
+ return aritmetikDizi;
 }
+else if (agorev1.length == 0){
+  return null ;
+}
+}
+
+
+
+
+
 
 /* !!!! Burdan aşağısını değiştirmeyin !!!! */
 function as() {
