@@ -16,9 +16,16 @@
   örnek output: ""
 */
 
-function dosyaAdiniBul(/* kodlar buraya */) {
-  // kodlar buraya
+function dosyaAdiniBul(input){
+let bolunen = [];
+bolunen = input.split("/");
+let sonuc = bolunen[bolunen.length-1];
+return sonuc ;
 }
+
+ 
+ 
+
 
 /*
   GÖREV 2
@@ -38,8 +45,9 @@ function dosyaAdiniBul(/* kodlar buraya */) {
   örnek output: 104
 */
 
-function ortalamaBul(/* kodlar buraya */) {
-  // kodlar buraya
+function ortalamaBul(sayiArray) {
+let yeniArray =[];
+yeniArray = 
 }
 
 /*
